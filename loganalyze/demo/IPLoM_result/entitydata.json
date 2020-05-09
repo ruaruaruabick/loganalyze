@@ -1,1 +1,1888 @@
-{"sent1": {"content": "Initializing Spring embedded WebApplicationContext", "entities": []}, "sent2": {"content": "Tomcat <*> <*> port(s) 80 (http)", "entities": []}, "sent3": {"content": "Mapped \"{[/carts/{customerId .*}/items/{itemId .*}] methods [GET] produces [application/json]}\" onto public works.weave.socks.cart.entities.Item works.weave.socks.cart.controllers.ItemsController.get(java.lang.String java.lang.String)", "entities": []}, "sent4": {"content": "Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b40d5f0 startup date [Fri Nov 01 07 00 57 GMT 2019]; parent org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1", "entities": []}, "sent5": {"content": "Mapped \"{[/{repository}/{id}] methods [HEAD] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation java.io.Serializable org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException", "entities": []}, "sent6": {"content": "Mapped <*> methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public <*> <*> <*> <*> <*> <*> <*>", "entities": []}, "sent7": {"content": "Mapped \"{[/{repository}/{id}] methods [PATCH] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.data.rest.webmvc.PersistentEntityResource java.io.Serializable org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler org.springframework.data.rest.webmvc.support.ETag java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException org.springframework.data.rest.webmvc.ResourceNotFoundException", "entities": []}, "sent8": {"content": "Mapped \"{[/{repository}/{id}] methods [PUT] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.data.rest.webmvc.PersistentEntityResource java.io.Serializable org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler org.springframework.data.rest.webmvc.support.ETag java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException", "entities": []}, "sent9": {"content": "Monitor thread successfully connected to server with description ServerDescription{address carts-db 27017 type STANDALONE state CONNECTED ok true version ServerVersion{versionList [4 2 1]} minWireVersion 0 maxWireVersion 8 maxDocumentSize 16777216 roundTripTimeNanos <*>", "entities": []}, "sent10": {"content": "Mapped \"{[/{repository}/{id}/{property}] methods [PATCH || PUT || POST] consumes [application/json || application/x-spring-data-compact+json || text/uri-list] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.http.HttpMethod org.springframework.hateoas.Resources<java.lang.Object> java.io.Serializable java.lang.String) throws java.lang.Exception", "entities": []}, "sent11": {"content": "Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type Consider declaring such methods as 'static'.", "entities": []}, "sent12": {"content": "Overriding bean definition for bean 'managementServletContext' with a different definition replacing [Root bean class [null]; scope ; abstract false; lazyInit false; autowireMode 3; dependencyCheck 0; autowireCandidate true; primary false; factoryBeanName org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName managementServletContext; initMethodName null; destroyMethodName (inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean class [null]; scope ; abstract false; lazyInit false; autowireMode 3; dependencyCheck 0; autowireCandidate true; primary false; factoryBeanName org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName managementServletContext; initMethodName null; destroyMethodName (inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]", "entities": []}, "sent13": {"content": "Starting service Tomcat", "entities": []}, "sent14": {"content": "BeanFactory id 5e44614a-7369-3438-a326-d1b2bda21648", "entities": []}, "sent15": {"content": "Detected <*> <*> in <*>", "entities": []}, "sent16": {"content": "Mapping <*> <*> to <*>", "entities": []}, "sent17": {"content": "Root WebApplicationContext initialization completed in 67333 ms", "entities": []}, "sent18": {"content": "Registering beans for JMX exposure on startup", "entities": []}, "sent19": {"content": "Loading properties file from class path resource [rest-default-messages.properties]", "entities": []}, "sent20": {"content": "Mapped <*> methods <*> onto public <*> <*>", "entities": []}, "sent21": {"content": "Started CartApplication in 197.748 seconds (JVM running for 266.136)", "entities": []}, "sent22": {"content": "Opened connection [connectionId{localValue <*> serverValue <*> to carts-db 27017", "entities": []}, "sent23": {"content": "Exception in monitor thread while connecting to server carts-db 27017", "entities": []}, "sent24": {"content": "Bean with name <*> has been autodetected for JMX exposure", "entities": []}, "sent25": {"content": "No active profile set falling back to default profiles default", "entities": []}, "sent26": {"content": "Located managed bean <*> registering with JMX server as MBean <*> name <*> type <*>", "entities": []}, "sent27": {"content": "Mapped <*> methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public <*> <*>", "entities": []}, "sent28": {"content": "Looking for @ControllerAdvice org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b40d5f0 startup date [Fri Nov 01 07 00 57 GMT 2019]; parent org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1", "entities": []}, "sent29": {"content": "Cluster created with settings {hosts [carts-db 27017] mode SINGLE requiredClusterType UNKNOWN serverSelectionTimeout '10000 ms' maxWaitQueueSize 500}", "entities": []}, "sent30": {"content": "Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1 startup date [Fri Nov 01 07 00 26 GMT 2019]; root of context hierarchy", "entities": []}, "sent31": {"content": "Mapped \"{[/{repository}/search/{search}] methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<java.lang.Object> <*> java.lang.String)", "entities": []}, "sent32": {"content": "Located managed bean 'configurationPropertiesRebinder' registering with JMX server as MBean [org.springframework.cloud.context.properties name configurationPropertiesRebinder context 1b40d5f0 type ConfigurationPropertiesRebinder]", "entities": []}, "sent33": {"content": "Bean <*> of type [class <*> is not eligible for getting processed by all BeanPostProcessors (for example not eligible for auto-proxying)", "entities": []}, "sent34": {"content": "Mapped <*> methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public <*> <*> <*> <*> <*> <*> <*> <*>", "entities": []}, "sent35": {"content": "Initializing ExecutorService", "entities": []}, "sent36": {"content": "Mapped <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>", "entities": []}, "sent37": {"content": "Mapped <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>", "entities": []}, "sent38": {"content": "Mapped \"{[/{repository}] methods <*> produces <*> || <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> org.springframework.web.HttpRequestMethodNotSupportedException", "entities": []}, "sent39": {"content": "Starting beans in phase 0", "entities": []}, "sent40": {"content": "Starting Servlet Engine Apache Tomcat/8.5.11", "entities": []}, "sent41": {"content": "Mapped \"{[/error]}\" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)", "entities": []}, "sent42": {"content": "Mapped \"{[/profile] methods [GET]}\" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()", "entities": []}, "sent43": {"content": "Mapped <*> <*> <*> <*> <*> <*> <*> <*>", "entities": []}, "sent44": {"content": "Mapped URL path <*> onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]", "entities": []}, "sent45": {"content": "Mapped <*> <*> <*> <*> <*> onto public <*> <*>", "entities": []}, "sent46": {"content": "Mapped \"{[/heapdump || /heapdump.json] methods [GET] produces [application/octet-stream]}\" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean javax.servlet.http.HttpServletRequest javax.servlet.http.HttpServletResponse) throws java.io.IOException javax.servlet.ServletException", "entities": []}, "sent47": {"content": "Mapped \"{[/{repository}/{id}/{property}] methods [GET] produces [application/x-spring-data-compact+json || text/uri-list]}\" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation java.io.Serializable java.lang.String org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception", "entities": []}, "sent48": {"content": "Mapped \"{[/{repository}/search/{search}] methods [GET] produces [application/x-spring-data-compact+json]}\" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.util.MultiValueMap<java.lang.String java.lang.Object> java.lang.String java.lang.String org.springframework.data.rest.webmvc.support.DefaultedPageable org.springframework.data.domain.Sort org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)", "entities": []}, "sent49": {"content": "Mapped \"{[/ || ] methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public <*> <*>", "entities": []}}
+{
+  "sent1": {
+    "content": "Initializing Spring embedded WebApplicationContext",
+    "entities": [
+      {
+        "name": "WebApplicationContext",
+        "start": 29,
+        "end": 49,
+        "attributes": []
+      },
+      {
+        "name": "Spring",
+        "start": 13,
+        "end": 18,
+        "attributes": []
+      },
+      {
+        "name": "Initializing",
+        "start": 0,
+        "end": 11,
+        "attributes": []
+      }
+    ]
+  },
+  "sent2": {
+    "content": "Tomcat <*> <*> port(s) 80 (http)",
+    "entities": [
+      {
+        "name": "Tomcat",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "['started on']"
+        ]
+      }
+    ]
+  },
+  "sent3": {
+    "content": "Mapped \"{[/carts/{customerId .*}/items/{itemId .*}] methods [GET] produces [application/json]}\" onto public works.weave.socks.cart.entities.Item works.weave.socks.cart.controllers.ItemsController.get(java.lang.String java.lang.String)",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 52,
+        "end": 58,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 101,
+        "end": 106,
+        "attributes": [
+          " ''"
+        ]
+      },
+      {
+        "name": "works.weave.socks.cart.entities.Item",
+        "start": 108,
+        "end": 143,
+        "attributes": []
+      }
+    ]
+  },
+  "sent4": {
+    "content": "Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b40d5f0 startup date [Fri Nov 01 07 00 57 GMT 2019]; parent org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1",
+    "entities": [
+      {
+        "name": "startup",
+        "start": 108,
+        "end": 114,
+        "attributes": []
+      },
+      {
+        "name": "date",
+        "start": 116,
+        "end": 119,
+        "attributes": []
+      },
+      {
+        "name": "Nov",
+        "start": 126,
+        "end": 128,
+        "attributes": []
+      },
+      {
+        "name": "GMT",
+        "start": 142,
+        "end": 144,
+        "attributes": []
+      },
+      {
+        "name": "parent",
+        "start": 153,
+        "end": 158,
+        "attributes": []
+      }
+    ]
+  },
+  "sent5": {
+    "content": "Mapped \"{[/{repository}/{id}] methods [HEAD] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation java.io.Serializable org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 30,
+        "end": 36,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 140,
+        "end": 145,
+        "attributes": [
+          " ''"
+        ]
+      },
+      {
+        "name": "throws",
+        "start": 428,
+        "end": 433,
+        "attributes": []
+      },
+      {
+        "name": "java.io.Serializable",
+        "start": 335,
+        "end": 354,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.web.HttpRequestMethodNotSupportedException",
+        "start": 435,
+        "end": 496,
+        "attributes": []
+      }
+    ]
+  },
+  "sent6": {
+    "content": "Mapped <*> methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public <*> <*> <*> <*> <*> <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 11,
+        "end": 17,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 118,
+        "end": 123,
+        "attributes": [
+          " ''"
+        ]
+      }
+    ]
+  },
+  "sent7": {
+    "content": "Mapped \"{[/{repository}/{id}] methods [PATCH] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.data.rest.webmvc.PersistentEntityResource java.io.Serializable org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler org.springframework.data.rest.webmvc.support.ETag java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException org.springframework.data.rest.webmvc.ResourceNotFoundException",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 30,
+        "end": 36,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 141,
+        "end": 146,
+        "attributes": [
+          " ''"
+        ]
+      },
+      {
+        "name": "throws",
+        "start": 598,
+        "end": 603,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler",
+        "start": 459,
+        "end": 528,
+        "attributes": []
+      },
+      {
+        "name": "java.io.Serializable",
+        "start": 438,
+        "end": 457,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.web.HttpRequestMethodNotSupportedException",
+        "start": 605,
+        "end": 666,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.rest.webmvc.ResourceNotFoundException",
+        "start": 668,
+        "end": 729,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.rest.webmvc.support.ETag",
+        "start": 530,
+        "end": 578,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.rest.webmvc.PersistentEntityResource",
+        "start": 376,
+        "end": 436,
+        "attributes": []
+      }
+    ]
+  },
+  "sent8": {
+    "content": "Mapped \"{[/{repository}/{id}] methods [PUT] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.data.rest.webmvc.PersistentEntityResource java.io.Serializable org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler org.springframework.data.rest.webmvc.support.ETag java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 30,
+        "end": 36,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 139,
+        "end": 144,
+        "attributes": [
+          " ''"
+        ]
+      },
+      {
+        "name": "throws",
+        "start": 604,
+        "end": 609,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler",
+        "start": 465,
+        "end": 534,
+        "attributes": []
+      },
+      {
+        "name": "java.io.Serializable",
+        "start": 444,
+        "end": 463,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.web.HttpRequestMethodNotSupportedException",
+        "start": 611,
+        "end": 672,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.rest.webmvc.support.ETag",
+        "start": 536,
+        "end": 584,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.rest.webmvc.PersistentEntityResource",
+        "start": 382,
+        "end": 442,
+        "attributes": []
+      }
+    ]
+  },
+  "sent9": {
+    "content": "Monitor thread successfully connected to server with description ServerDescription{address carts-db 27017 type STANDALONE state CONNECTED ok true version ServerVersion{versionList [4 2 1]} minWireVersion 0 maxWireVersion 8 maxDocumentSize 16777216 roundTripTimeNanos <*>",
+    "entities": [
+      {
+        "name": "type",
+        "start": 106,
+        "end": 109,
+        "attributes": [
+          "[\"'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration'\""
+        ]
+      },
+      {
+        "name": "server",
+        "start": 41,
+        "end": 46,
+        "attributes": [
+          "['921506']"
+        ]
+      },
+      {
+        "name": "thread",
+        "start": 8,
+        "end": 13,
+        "attributes": []
+      },
+      {
+        "name": "true",
+        "start": 141,
+        "end": 144,
+        "attributes": []
+      },
+      {
+        "name": "version",
+        "start": 146,
+        "end": 152,
+        "attributes": []
+      },
+      {
+        "name": "state",
+        "start": 122,
+        "end": 126,
+        "attributes": []
+      },
+      {
+        "name": "roundTripTimeNanos",
+        "start": 248,
+        "end": 265,
+        "attributes": []
+      },
+      {
+        "name": "ok",
+        "start": 138,
+        "end": 139,
+        "attributes": []
+      },
+      {
+        "name": "minWireVersion",
+        "start": 189,
+        "end": 202,
+        "attributes": []
+      },
+      {
+        "name": "maxWireVersion",
+        "start": 206,
+        "end": 219,
+        "attributes": []
+      },
+      {
+        "name": "maxDocumentSize",
+        "start": 223,
+        "end": 237,
+        "attributes": []
+      },
+      {
+        "name": "description",
+        "start": 53,
+        "end": 63,
+        "attributes": []
+      },
+      {
+        "name": "connected",
+        "start": 28,
+        "end": 36,
+        "attributes": []
+      },
+      {
+        "name": "STANDALONE",
+        "start": 111,
+        "end": 120,
+        "attributes": []
+      },
+      {
+        "name": "Monitor",
+        "start": 0,
+        "end": 6,
+        "attributes": []
+      }
+    ]
+  },
+  "sent10": {
+    "content": "Mapped \"{[/{repository}/{id}/{property}] methods [PATCH || PUT || POST] consumes [application/json || application/x-spring-data-compact+json || text/uri-list] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.http.HttpMethod org.springframework.hateoas.Resources<java.lang.Object> java.io.Serializable java.lang.String) throws java.lang.Exception",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 41,
+        "end": 47,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 254,
+        "end": 259,
+        "attributes": [
+          " ''"
+        ]
+      },
+      {
+        "name": "throws",
+        "start": 647,
+        "end": 652,
+        "attributes": []
+      },
+      {
+        "name": "java.io.Serializable",
+        "start": 608,
+        "end": 627,
+        "attributes": []
+      },
+      {
+        "name": "java.lang.Exception",
+        "start": 654,
+        "end": 672,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.http.HttpMethod",
+        "start": 516,
+        "end": 550,
+        "attributes": []
+      }
+    ]
+  },
+  "sent11": {
+    "content": "Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type Consider declaring such methods as 'static'.",
+    "entities": [
+      {
+        "name": "methods",
+        "start": 244,
+        "end": 250,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "type",
+        "start": 215,
+        "end": 218,
+        "attributes": [
+          "[\"'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration'\""
+        ]
+      },
+      {
+        "name": "bean",
+        "start": 30,
+        "end": 33,
+        "attributes": []
+      },
+      {
+        "name": "as",
+        "start": 91,
+        "end": 92,
+        "attributes": []
+      },
+      {
+        "name": "definition",
+        "start": 35,
+        "end": 44,
+        "attributes": []
+      },
+      {
+        "name": "a",
+        "start": 1,
+        "end": 1,
+        "attributes": []
+      },
+      {
+        "name": "typical",
+        "start": 122,
+        "end": 128,
+        "attributes": []
+      },
+      {
+        "name": "such",
+        "start": 239,
+        "end": 242,
+        "attributes": []
+      },
+      {
+        "name": "singleton",
+        "start": 71,
+        "end": 79,
+        "attributes": []
+      },
+      {
+        "name": "since",
+        "start": 61,
+        "end": 65,
+        "attributes": []
+      },
+      {
+        "name": "return",
+        "start": 208,
+        "end": 213,
+        "attributes": []
+      },
+      {
+        "name": "method",
+        "start": 158,
+        "end": 163,
+        "attributes": []
+      },
+      {
+        "name": "its",
+        "start": 67,
+        "end": 69,
+        "attributes": []
+      },
+      {
+        "name": "instance",
+        "start": 81,
+        "end": 88,
+        "attributes": []
+      },
+      {
+        "name": "The",
+        "start": 118,
+        "end": 120,
+        "attributes": []
+      },
+      {
+        "name": "Consider",
+        "start": 220,
+        "end": 227,
+        "attributes": []
+      },
+      {
+        "name": "BeanDefinitionRegistryPostProcessor",
+        "start": 172,
+        "end": 206,
+        "attributes": []
+      }
+    ]
+  },
+  "sent12": {
+    "content": "Overriding bean definition for bean 'managementServletContext' with a different definition replacing [Root bean class [null]; scope ; abstract false; lazyInit false; autowireMode 3; dependencyCheck 0; autowireCandidate true; primary false; factoryBeanName org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName managementServletContext; initMethodName null; destroyMethodName (inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean class [null]; scope ; abstract false; lazyInit false; autowireMode 3; dependencyCheck 0; autowireCandidate true; primary false; factoryBeanName org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName managementServletContext; initMethodName null; destroyMethodName (inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]",
+    "entities": [
+      {
+        "name": "class",
+        "start": 112,
+        "end": 116,
+        "attributes": []
+      },
+      {
+        "name": "bean",
+        "start": 11,
+        "end": 14,
+        "attributes": []
+      },
+      {
+        "name": "path",
+        "start": 471,
+        "end": 474,
+        "attributes": []
+      },
+      {
+        "name": "resource",
+        "start": 476,
+        "end": 483,
+        "attributes": []
+      },
+      {
+        "name": "definition",
+        "start": 16,
+        "end": 25,
+        "attributes": []
+      },
+      {
+        "name": "a",
+        "start": 13,
+        "end": 13,
+        "attributes": []
+      },
+      {
+        "name": "scope",
+        "start": 126,
+        "end": 130,
+        "attributes": []
+      },
+      {
+        "name": "lazyInit",
+        "start": 150,
+        "end": 157,
+        "attributes": []
+      },
+      {
+        "name": "initMethodName",
+        "start": 403,
+        "end": 416,
+        "attributes": []
+      },
+      {
+        "name": "factoryMethodName",
+        "start": 359,
+        "end": 375,
+        "attributes": []
+      },
+      {
+        "name": "factoryBeanName",
+        "start": 240,
+        "end": 254,
+        "attributes": []
+      },
+      {
+        "name": "destroyMethodName",
+        "start": 424,
+        "end": 440,
+        "attributes": []
+      },
+      {
+        "name": "dependencyCheck",
+        "start": 182,
+        "end": 196,
+        "attributes": []
+      },
+      {
+        "name": "autowireMode",
+        "start": 166,
+        "end": 177,
+        "attributes": []
+      },
+      {
+        "name": "autowireCandidate",
+        "start": 201,
+        "end": 217,
+        "attributes": []
+      },
+      {
+        "name": "abstract",
+        "start": 134,
+        "end": 141,
+        "attributes": []
+      },
+      {
+        "name": "replacing",
+        "start": 91,
+        "end": 99,
+        "attributes": []
+      }
+    ]
+  },
+  "sent13": {
+    "content": "Starting service Tomcat",
+    "entities": [
+      {
+        "name": "Tomcat",
+        "start": 17,
+        "end": 22,
+        "attributes": [
+          "['started on']"
+        ]
+      },
+      {
+        "name": "Starting",
+        "start": 0,
+        "end": 7,
+        "attributes": []
+      },
+      {
+        "name": "service",
+        "start": 9,
+        "end": 15,
+        "attributes": []
+      }
+    ]
+  },
+  "sent14": {
+    "content": "BeanFactory id 5e44614a-7369-3438-a326-d1b2bda21648",
+    "entities": [
+      {
+        "name": "id",
+        "start": 12,
+        "end": 13,
+        "attributes": []
+      },
+      {
+        "name": "BeanFactory",
+        "start": 0,
+        "end": 10,
+        "attributes": []
+      }
+    ]
+  },
+  "sent15": {
+    "content": "Detected <*> <*> in <*>",
+    "entities": []
+  },
+  "sent16": {
+    "content": "Mapping <*> <*> to <*>",
+    "entities": [
+      {
+        "name": "Mapping",
+        "start": 0,
+        "end": 6,
+        "attributes": [
+          "[\"servlet: 'dispatcherServlet'\""
+        ]
+      }
+    ]
+  },
+  "sent17": {
+    "content": "Root WebApplicationContext initialization completed in 67333 ms",
+    "entities": [
+      {
+        "name": "Root",
+        "start": 0,
+        "end": 3,
+        "attributes": []
+      },
+      {
+        "name": "ms",
+        "start": 61,
+        "end": 62,
+        "attributes": []
+      },
+      {
+        "name": "WebApplicationContext",
+        "start": 5,
+        "end": 25,
+        "attributes": []
+      },
+      {
+        "name": "initialization",
+        "start": 27,
+        "end": 40,
+        "attributes": []
+      }
+    ]
+  },
+  "sent18": {
+    "content": "Registering beans for JMX exposure on startup",
+    "entities": [
+      {
+        "name": "JMX",
+        "start": 22,
+        "end": 24,
+        "attributes": [
+          "[\"'refreshEndpoint':\""
+        ]
+      },
+      {
+        "name": "exposure",
+        "start": 26,
+        "end": 33,
+        "attributes": []
+      },
+      {
+        "name": "startup",
+        "start": 38,
+        "end": 44,
+        "attributes": []
+      },
+      {
+        "name": "beans",
+        "start": 12,
+        "end": 16,
+        "attributes": []
+      },
+      {
+        "name": "on",
+        "start": 35,
+        "end": 36,
+        "attributes": []
+      },
+      {
+        "name": "Registering",
+        "start": 0,
+        "end": 10,
+        "attributes": []
+      }
+    ]
+  },
+  "sent19": {
+    "content": "Loading properties file from class path resource [rest-default-messages.properties]",
+    "entities": [
+      {
+        "name": "class",
+        "start": 29,
+        "end": 33,
+        "attributes": []
+      },
+      {
+        "name": "path",
+        "start": 35,
+        "end": 38,
+        "attributes": []
+      },
+      {
+        "name": "resource",
+        "start": 40,
+        "end": 47,
+        "attributes": []
+      },
+      {
+        "name": "properties",
+        "start": 8,
+        "end": 17,
+        "attributes": []
+      },
+      {
+        "name": "from",
+        "start": 24,
+        "end": 27,
+        "attributes": []
+      },
+      {
+        "name": "file",
+        "start": 19,
+        "end": 22,
+        "attributes": []
+      },
+      {
+        "name": "Loading",
+        "start": 0,
+        "end": 6,
+        "attributes": []
+      }
+    ]
+  },
+  "sent20": {
+    "content": "Mapped <*> methods <*> onto public <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 11,
+        "end": 17,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 28,
+        "end": 33,
+        "attributes": [
+          " ''"
+        ]
+      }
+    ]
+  },
+  "sent21": {
+    "content": "Started CartApplication in 197.748 seconds (JVM running for 266.136)",
+    "entities": [
+      {
+        "name": "seconds",
+        "start": 35,
+        "end": 41,
+        "attributes": []
+      },
+      {
+        "name": "CartApplication",
+        "start": 8,
+        "end": 22,
+        "attributes": []
+      },
+      {
+        "name": "197.748",
+        "start": 27,
+        "end": 33,
+        "attributes": []
+      }
+    ]
+  },
+  "sent22": {
+    "content": "Opened connection [connectionId{localValue <*> serverValue <*> to carts-db 27017",
+    "entities": [
+      {
+        "name": "serverValue",
+        "start": 47,
+        "end": 57,
+        "attributes": [
+          "['43"
+        ]
+      },
+      {
+        "name": "connection",
+        "start": 7,
+        "end": 16,
+        "attributes": [
+          "'"
+        ]
+      },
+      {
+        "name": "Opened",
+        "start": 0,
+        "end": 5,
+        "attributes": []
+      }
+    ]
+  },
+  "sent23": {
+    "content": "Exception in monitor thread while connecting to server carts-db 27017",
+    "entities": [
+      {
+        "name": "server",
+        "start": 48,
+        "end": 53,
+        "attributes": [
+          "['921506']"
+        ]
+      },
+      {
+        "name": "thread",
+        "start": 21,
+        "end": 26,
+        "attributes": []
+      },
+      {
+        "name": "Exception",
+        "start": 0,
+        "end": 8,
+        "attributes": []
+      },
+      {
+        "name": "while",
+        "start": 28,
+        "end": 32,
+        "attributes": []
+      },
+      {
+        "name": "monitor",
+        "start": 13,
+        "end": 19,
+        "attributes": []
+      }
+    ]
+  },
+  "sent24": {
+    "content": "Bean with name <*> has been autodetected for JMX exposure",
+    "entities": [
+      {
+        "name": "JMX",
+        "start": 45,
+        "end": 47,
+        "attributes": [
+          "[\"'refreshEndpoint':\""
+        ]
+      },
+      {
+        "name": "Bean",
+        "start": 0,
+        "end": 3,
+        "attributes": []
+      },
+      {
+        "name": "name",
+        "start": 10,
+        "end": 13,
+        "attributes": [
+          " '[org.springframework.cloud.endpoint'"
+        ]
+      },
+      {
+        "name": "exposure",
+        "start": 49,
+        "end": 56,
+        "attributes": []
+      },
+      {
+        "name": "autodetected",
+        "start": 28,
+        "end": 39,
+        "attributes": []
+      }
+    ]
+  },
+  "sent25": {
+    "content": "No active profile set falling back to default profiles default",
+    "entities": [
+      {
+        "name": "profile",
+        "start": 10,
+        "end": 16,
+        "attributes": []
+      },
+      {
+        "name": "default",
+        "start": 38,
+        "end": 44,
+        "attributes": []
+      },
+      {
+        "name": "profiles",
+        "start": 46,
+        "end": 53,
+        "attributes": []
+      }
+    ]
+  },
+  "sent26": {
+    "content": "Located managed bean <*> registering with JMX server as MBean <*> name <*> type <*>",
+    "entities": [
+      {
+        "name": "type",
+        "start": 75,
+        "end": 78,
+        "attributes": [
+          "[\"'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration'\""
+        ]
+      },
+      {
+        "name": "server",
+        "start": 46,
+        "end": 51,
+        "attributes": [
+          "['921506']"
+        ]
+      },
+      {
+        "name": "bean",
+        "start": 16,
+        "end": 19,
+        "attributes": []
+      },
+      {
+        "name": "JMX",
+        "start": 42,
+        "end": 44,
+        "attributes": [
+          "[\"'refreshEndpoint':\""
+        ]
+      },
+      {
+        "name": "name",
+        "start": 66,
+        "end": 69,
+        "attributes": [
+          " '[org.springframework.cloud.endpoint'"
+        ]
+      },
+      {
+        "name": "as",
+        "start": 53,
+        "end": 54,
+        "attributes": []
+      },
+      {
+        "name": "registering",
+        "start": 25,
+        "end": 35,
+        "attributes": []
+      },
+      {
+        "name": "MBean",
+        "start": 56,
+        "end": 60,
+        "attributes": []
+      }
+    ]
+  },
+  "sent27": {
+    "content": "Mapped <*> methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 11,
+        "end": 17,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 118,
+        "end": 123,
+        "attributes": [
+          " ''"
+        ]
+      }
+    ]
+  },
+  "sent28": {
+    "content": "Looking for @ControllerAdvice org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b40d5f0 startup date [Fri Nov 01 07 00 57 GMT 2019]; parent org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1",
+    "entities": [
+      {
+        "name": "startup",
+        "start": 127,
+        "end": 133,
+        "attributes": []
+      },
+      {
+        "name": "date",
+        "start": 135,
+        "end": 138,
+        "attributes": []
+      },
+      {
+        "name": "Nov",
+        "start": 145,
+        "end": 147,
+        "attributes": []
+      },
+      {
+        "name": "GMT",
+        "start": 161,
+        "end": 163,
+        "attributes": []
+      },
+      {
+        "name": "parent",
+        "start": 172,
+        "end": 177,
+        "attributes": []
+      }
+    ]
+  },
+  "sent29": {
+    "content": "Cluster created with settings {hosts [carts-db 27017] mode SINGLE requiredClusterType UNKNOWN serverSelectionTimeout '10000 ms' maxWaitQueueSize 500}",
+    "entities": [
+      {
+        "name": "settings",
+        "start": 21,
+        "end": 28,
+        "attributes": []
+      },
+      {
+        "name": "serverSelectionTimeout",
+        "start": 94,
+        "end": 115,
+        "attributes": []
+      },
+      {
+        "name": "requiredClusterType",
+        "start": 66,
+        "end": 84,
+        "attributes": []
+      },
+      {
+        "name": "mode",
+        "start": 54,
+        "end": 57,
+        "attributes": []
+      },
+      {
+        "name": "maxWaitQueueSize",
+        "start": 128,
+        "end": 143,
+        "attributes": []
+      },
+      {
+        "name": "Cluster",
+        "start": 0,
+        "end": 6,
+        "attributes": []
+      }
+    ]
+  },
+  "sent30": {
+    "content": "Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1 startup date [Fri Nov 01 07 00 26 GMT 2019]; root of context hierarchy",
+    "entities": [
+      {
+        "name": "of",
+        "start": 144,
+        "end": 145,
+        "attributes": [
+          " 'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$$EnhancerBySpringCGLIB$$ecb4cb09]']"
+        ]
+      },
+      {
+        "name": "startup",
+        "start": 94,
+        "end": 100,
+        "attributes": []
+      },
+      {
+        "name": "date",
+        "start": 102,
+        "end": 105,
+        "attributes": []
+      },
+      {
+        "name": "Nov",
+        "start": 112,
+        "end": 114,
+        "attributes": []
+      },
+      {
+        "name": "GMT",
+        "start": 128,
+        "end": 130,
+        "attributes": []
+      },
+      {
+        "name": "context",
+        "start": 31,
+        "end": 37,
+        "attributes": []
+      },
+      {
+        "name": "root",
+        "start": 139,
+        "end": 142,
+        "attributes": []
+      },
+      {
+        "name": "hierarchy",
+        "start": 155,
+        "end": 163,
+        "attributes": []
+      }
+    ]
+  },
+  "sent31": {
+    "content": "Mapped \"{[/{repository}/search/{search}] methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public org.springframework.http.ResponseEntity<java.lang.Object> <*> java.lang.String)",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 41,
+        "end": 47,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 148,
+        "end": 153,
+        "attributes": [
+          " ''"
+        ]
+      }
+    ]
+  },
+  "sent32": {
+    "content": "Located managed bean 'configurationPropertiesRebinder' registering with JMX server as MBean [org.springframework.cloud.context.properties name configurationPropertiesRebinder context 1b40d5f0 type ConfigurationPropertiesRebinder]",
+    "entities": [
+      {
+        "name": "type",
+        "start": 192,
+        "end": 195,
+        "attributes": [
+          "[\"'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration'\""
+        ]
+      },
+      {
+        "name": "server",
+        "start": 76,
+        "end": 81,
+        "attributes": [
+          "['921506']"
+        ]
+      },
+      {
+        "name": "bean",
+        "start": 16,
+        "end": 19,
+        "attributes": []
+      },
+      {
+        "name": "JMX",
+        "start": 72,
+        "end": 74,
+        "attributes": [
+          "[\"'refreshEndpoint':\""
+        ]
+      },
+      {
+        "name": "name",
+        "start": 138,
+        "end": 141,
+        "attributes": [
+          " '[org.springframework.cloud.endpoint'"
+        ]
+      },
+      {
+        "name": "as",
+        "start": 83,
+        "end": 84,
+        "attributes": []
+      },
+      {
+        "name": "registering",
+        "start": 55,
+        "end": 65,
+        "attributes": []
+      },
+      {
+        "name": "MBean",
+        "start": 86,
+        "end": 90,
+        "attributes": []
+      },
+      {
+        "name": "1b40d5f0",
+        "start": 183,
+        "end": 190,
+        "attributes": []
+      },
+      {
+        "name": "configurationPropertiesRebinder",
+        "start": 22,
+        "end": 52,
+        "attributes": []
+      },
+      {
+        "name": "context",
+        "start": 119,
+        "end": 125,
+        "attributes": []
+      }
+    ]
+  },
+  "sent33": {
+    "content": "Bean <*> of type [class <*> is not eligible for getting processed by all BeanPostProcessors (for example not eligible for auto-proxying)",
+    "entities": [
+      {
+        "name": "type",
+        "start": 12,
+        "end": 15,
+        "attributes": [
+          "[\"'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration'\""
+        ]
+      },
+      {
+        "name": "of",
+        "start": 9,
+        "end": 10,
+        "attributes": [
+          " 'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$$EnhancerBySpringCGLIB$$ecb4cb09]']"
+        ]
+      },
+      {
+        "name": "Bean",
+        "start": 0,
+        "end": 3,
+        "attributes": []
+      },
+      {
+        "name": "example",
+        "start": 97,
+        "end": 103,
+        "attributes": []
+      },
+      {
+        "name": "all",
+        "start": 69,
+        "end": 71,
+        "attributes": []
+      },
+      {
+        "name": "BeanPostProcessors",
+        "start": 73,
+        "end": 90,
+        "attributes": []
+      }
+    ]
+  },
+  "sent34": {
+    "content": "Mapped <*> methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public <*> <*> <*> <*> <*> <*> <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 11,
+        "end": 17,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 118,
+        "end": 123,
+        "attributes": [
+          " ''"
+        ]
+      }
+    ]
+  },
+  "sent35": {
+    "content": "Initializing ExecutorService",
+    "entities": [
+      {
+        "name": "Initializing",
+        "start": 0,
+        "end": 11,
+        "attributes": []
+      },
+      {
+        "name": "ExecutorService",
+        "start": 13,
+        "end": 27,
+        "attributes": []
+      }
+    ]
+  },
+  "sent36": {
+    "content": "Mapped <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      }
+    ]
+  },
+  "sent37": {
+    "content": "Mapped <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      }
+    ]
+  },
+  "sent38": {
+    "content": "Mapped \"{[/{repository}] methods <*> produces <*> || <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> org.springframework.web.HttpRequestMethodNotSupportedException",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 25,
+        "end": 31,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "org.springframework.web.HttpRequestMethodNotSupportedException",
+        "start": 93,
+        "end": 154,
+        "attributes": []
+      }
+    ]
+  },
+  "sent39": {
+    "content": "Starting beans in phase 0",
+    "entities": [
+      {
+        "name": "beans",
+        "start": 9,
+        "end": 13,
+        "attributes": []
+      },
+      {
+        "name": "Starting",
+        "start": 0,
+        "end": 7,
+        "attributes": []
+      },
+      {
+        "name": "phase",
+        "start": 18,
+        "end": 22,
+        "attributes": []
+      }
+    ]
+  },
+  "sent40": {
+    "content": "Starting Servlet Engine Apache Tomcat/8.5.11",
+    "entities": [
+      {
+        "name": "Starting",
+        "start": 0,
+        "end": 7,
+        "attributes": []
+      },
+      {
+        "name": "Servlet",
+        "start": 9,
+        "end": 15,
+        "attributes": []
+      },
+      {
+        "name": "Engine",
+        "start": 17,
+        "end": 22,
+        "attributes": []
+      },
+      {
+        "name": "Apache",
+        "start": 24,
+        "end": 29,
+        "attributes": []
+      }
+    ]
+  },
+  "sent41": {
+    "content": "Mapped \"{[/error]}\" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 25,
+        "end": 30,
+        "attributes": [
+          " ''"
+        ]
+      }
+    ]
+  },
+  "sent42": {
+    "content": "Mapped \"{[/profile] methods [GET]}\" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 20,
+        "end": 26,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      }
+    ]
+  },
+  "sent43": {
+    "content": "Mapped <*> <*> <*> <*> <*> <*> <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      }
+    ]
+  },
+  "sent44": {
+    "content": "Mapped URL path <*> onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "type",
+        "start": 36,
+        "end": 39,
+        "attributes": [
+          "[\"'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration'\""
+        ]
+      },
+      {
+        "name": "of",
+        "start": 33,
+        "end": 34,
+        "attributes": [
+          " 'org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$$EnhancerBySpringCGLIB$$ecb4cb09]']"
+        ]
+      },
+      {
+        "name": "path",
+        "start": 11,
+        "end": 14,
+        "attributes": []
+      },
+      {
+        "name": "handler",
+        "start": 25,
+        "end": 31,
+        "attributes": []
+      },
+      {
+        "name": "URL",
+        "start": 7,
+        "end": 9,
+        "attributes": []
+      }
+    ]
+  },
+  "sent45": {
+    "content": "Mapped <*> <*> <*> <*> <*> onto public <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 32,
+        "end": 37,
+        "attributes": [
+          " ''"
+        ]
+      }
+    ]
+  },
+  "sent46": {
+    "content": "Mapped \"{[/heapdump || /heapdump.json] methods [GET] produces [application/octet-stream]}\" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean javax.servlet.http.HttpServletRequest javax.servlet.http.HttpServletResponse) throws java.io.IOException javax.servlet.ServletException",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 39,
+        "end": 45,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 96,
+        "end": 101,
+        "attributes": [
+          " ''"
+        ]
+      },
+      {
+        "name": "throws",
+        "start": 267,
+        "end": 272,
+        "attributes": []
+      },
+      {
+        "name": "javax.servlet.http.HttpServletRequest",
+        "start": 189,
+        "end": 225,
+        "attributes": []
+      },
+      {
+        "name": "void",
+        "start": 103,
+        "end": 106,
+        "attributes": []
+      },
+      {
+        "name": "javax.servlet.ServletException",
+        "start": 294,
+        "end": 323,
+        "attributes": []
+      },
+      {
+        "name": "java.io.IOException",
+        "start": 274,
+        "end": 292,
+        "attributes": []
+      }
+    ]
+  },
+  "sent47": {
+    "content": "Mapped \"{[/{repository}/{id}/{property}] methods [GET] produces [application/x-spring-data-compact+json || text/uri-list]}\" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation java.io.Serializable java.lang.String org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 41,
+        "end": 47,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 129,
+        "end": 134,
+        "attributes": [
+          " ''"
+        ]
+      },
+      {
+        "name": "java.lang.String",
+        "start": 409,
+        "end": 424,
+        "attributes": []
+      },
+      {
+        "name": "throws",
+        "start": 498,
+        "end": 503,
+        "attributes": []
+      },
+      {
+        "name": "java.io.Serializable",
+        "start": 388,
+        "end": 407,
+        "attributes": []
+      },
+      {
+        "name": "java.lang.Exception",
+        "start": 505,
+        "end": 523,
+        "attributes": []
+      }
+    ]
+  },
+  "sent48": {
+    "content": "Mapped \"{[/{repository}/search/{search}] methods [GET] produces [application/x-spring-data-compact+json]}\" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.util.MultiValueMap<java.lang.String java.lang.Object> java.lang.String java.lang.String org.springframework.data.rest.webmvc.support.DefaultedPageable org.springframework.data.domain.Sort org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 41,
+        "end": 47,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 112,
+        "end": 117,
+        "attributes": [
+          " ''"
+        ]
+      },
+      {
+        "name": "java.lang.String",
+        "start": 348,
+        "end": 363,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.hateoas.ResourceSupport",
+        "start": 119,
+        "end": 161,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.rest.webmvc.support.DefaultedPageable",
+        "start": 417,
+        "end": 478,
+        "attributes": []
+      },
+      {
+        "name": "org.springframework.data.domain.Sort",
+        "start": 480,
+        "end": 515,
+        "attributes": []
+      }
+    ]
+  },
+  "sent49": {
+    "content": "Mapped \"{[/ || ] methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}\" onto public <*> <*>",
+    "entities": [
+      {
+        "name": "Mapped",
+        "start": 0,
+        "end": 5,
+        "attributes": [
+          "[''"
+        ]
+      },
+      {
+        "name": "methods",
+        "start": 17,
+        "end": 23,
+        "attributes": [
+          "['\"{[/browser'"
+        ]
+      },
+      {
+        "name": "public",
+        "start": 124,
+        "end": 129,
+        "attributes": [
+          " ''"
+        ]
+      }
+    ]
+  }
+}

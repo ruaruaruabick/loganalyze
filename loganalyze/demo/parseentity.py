@@ -8,6 +8,7 @@ import pandas as pd
 import string
 import json
 import sys
+import re
 sys.path.append('IPLoM_result/')
 sys.path.append('../logs')
 #将字典按值排序
@@ -100,8 +101,14 @@ for index, row in ep.iterrows():
 keys = list(entitypara.keys())
 items = list(entitypara.items())
 item = []
+reg = "[^0-9A-Za-z\u4e00-\u9fa5]"
 for i in items:
-    item.append(i[1])
+    if type(i[1]) == str:
+        temps = i[1]
+        temps = re.sub(reg, '', temps)
+        item.append(temps)
+    else:
+        item.append(i[1])
 eadf = pd.DataFrame({'entity':keys,'attribute':item})
 eadf.to_csv("./IPLoM_result/entityandattribute.csv",index=False)
 #生成entityjson
