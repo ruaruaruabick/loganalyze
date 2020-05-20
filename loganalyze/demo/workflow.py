@@ -39,6 +39,8 @@ def loadData(infile):
         for j in range(t):
             dataset.append(dataset1[i][j])
 
+
+
 def buildTree(window_size,type_num):
     # 构建存储所有模式及其next模式的data_tree
     global data_tree
@@ -120,6 +122,8 @@ def checkConcurrency(window_size,type_num):
                         (dataset[t+window_size] <= type_num):
                     dataset[t + window_size] = dataset[t + window_size] * 1000 +dataset[t + window_size + 1]
                     dataset[t + window_size + 1] = dataset[t + window_size]
+                else:
+                    print('1')
     t = len(dataset)
     for i in range(t-1,0,-1):
         if dataset[i]>1000 and dataset[i]==dataset[i-1]:

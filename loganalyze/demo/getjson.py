@@ -4,6 +4,21 @@ import getopt
 import pandas as pd
 import json
 
+#
+def parsepa(patter,eanda):
+    for i in eanda:
+        if i == '\n' and len(eanda) == 1:
+            for j in range(len(patter['entities'])):
+                patter['entities'][j]['attribute'] = []
+        else:
+            if i == '\n':
+                continue
+            entity, att = i.split(',')
+            for j in range(len(patter['entities'])):
+                if entity in patter['entities'][j].values():
+                    patter['entities'][j]['attribute'] = [att]
+                    break
+    return patter
 #生成json文件
 class enetityjson():
     def __init__(self,name,attribute):
@@ -29,7 +44,8 @@ class transactionjson():
     def __init__(self):
         self.patternlist = []
     def addpattern(self,pattern):
-        self.patternlist.append(pattern)
+        newpa = patternjson(pattern["patternid"],pattern["logkey"],pattern["content"],pattern["entities"],pattern["relation"])
+        self.patternlist.append(newpa.__dict__)
 
 class workflowjson():
     def __init__(self,name,lastflow,nextflow):
@@ -66,6 +82,7 @@ with open('IPLoM_result/relation.json','r') as f:
         index = i+1
         patternlist[i]['relation'] = relationjson(relation['sent'+str(index)]).__dict__
 linenow = 0
+tempae = open("IPLoM_result/attlist","r")
 #按行读取logkey
 for line in open("IPLoM_result/newvectorize.txt"):
     key_list = line.split(" ")
@@ -75,17 +92,20 @@ for line in open("IPLoM_result/newvectorize.txt"):
         if key > 1000:
             key1 = int(key/1000)
             key2 = key-key1*1000
-            if key1 not in lk:
-                lk.append(key1)
-            if key2 not in lk:
-                lk.append(key2)
+            lk.append(key1)
+            lk.append(key2)
         else:
-            if key not in lk:
-                lk.append(key)
+            lk.append(key)
     #构建transaction，lk为某transaction的logkey序列
     temptrans = transactionjson()
     for key in lk:
-        temptrans.addpattern(patternlist[key-1])
+        temppattern = patternlist[key-1]
+        tempaae = tempae.readline()
+        templist = tempaae.split(" ")
+        tempentity = patternlist[key - 1]['entities']
+        newpa = patternjson(patternlist[key - 1]['patternid'], patternlist[key - 1]['logkey'], patternlist[key - 1]['content'],
+                    tempentity, patternlist[key - 1]['relation']).__dict__
+        temptrans.addpattern(parsepa(newpa,templist))
     #构建workflow
     name = "workflow"+str(linenow)
     tempflow = workflowjson(name,"la","ne")

@@ -11,6 +11,7 @@ import sys
 import re
 sys.path.append('IPLoM_result/')
 sys.path.append('../logs')
+reg = "[^0-9A-Za-z\u4e00-\u9fa5]"
 #将字典按值排序
 def sort_by_value(d):
     newdict = {}
@@ -22,7 +23,8 @@ def sort_by_value(d):
     return newdict
 
 #提取实体
-result = os.popen("polyglot  --lang en  ner --input ../logs/cart1.log").readlines()
+#result = os.popen("polyglot  --lang en  ner --input ../logs/cart1.log").readlines()
+result = os.popen("polyglot  --lang en  ner --input ../logs/HDFS_2k.log").readlines()
 newresult = []
 numers = {}
 for line in result:
@@ -44,13 +46,14 @@ ExistEntityDict：LogKey中存在的实体按出现次数排序
 """
 #查看提取出的实体是否在Logkey中
 punc = string.punctuation
-LogKeyFile = pd.read_csv('IPLoM_result/cart1.log_templates.csv')
+#LogKeyFile = pd.read_csv('IPLoM_result/cart1.log_templates.csv')
+LogKeyFile = pd.read_csv('IPLoM_result/HDFS_2k.log_templates.csv')
 LogKey = LogKeyFile['EventTemplate'].tolist()
 LogKeyStr = "".join(LogKey)
 ExistEntity = []
 ExistEntityDict = {}
 for entity in newresult:
-    if entity in LogKeyStr and entity != 'at' and entity != 'in' and entity != 'for' and entity != 'to':
+    if entity in LogKeyStr and entity != 'at' and entity != 'in' and entity != 'for' and entity != 'to' and entity!= 'of':
         mypos = Text(entity, hint_language_code='en').pos_tags
         if 'ADV' != mypos[0][1] and 'ADJ' != mypos[0][1] and 'NUM' != mypos[0][1] and 'PUNCT' != mypos[0][1] and str(mypos[0][0]) not in punc and not str(mypos[0][0]).isdigit():
             ExistEntity.append(entity)
@@ -66,7 +69,8 @@ for log in LogKey:
             keyentitydict[log].append(key)
 
 #读取日志，提取参数
-logcsv = pd.read_csv('IPLoM_result/cart1.log_structured.csv')
+#logcsv = pd.read_csv('IPLoM_result/cart1.log_structured.csv')
+logcsv = pd.read_csv('IPLoM_result/HDFS_2k.log_structured.csv')
 ep = pd.DataFrame(logcsv,columns=['EventTemplate','ParameterList'])
 entityparaposs = {}
 entitypara = {}
@@ -83,6 +87,9 @@ for index, row in ep.iterrows():
             entityparaposs[entity] = entityparaposs[entity] + 1
 entityparaposs = sort_by_value(entityparaposs)
 #将参数与实体对应起来
+#tempf = open('IPLoM_result/attlist','w')
+tempf = open('IPLoM_result/HDFSattlist','w')
+
 for index, row in ep.iterrows():
     seque = []
     if not row['ParameterList'] == '[]':
@@ -96,21 +103,24 @@ for index, row in ep.iterrows():
             else:
                 seque.append(j)
         for j in range(min(len(para),len(seque))):
+            para[j] = re.sub(reg, '', para[j])
             entitypara[seque[j]] = para[j]
+            tempf.write(seque[j]+','+para[j]+' ')
+    tempf.write('\n')
+tempf.close()
 #保存实体与属性
 keys = list(entitypara.keys())
 items = list(entitypara.items())
 item = []
-reg = "[^0-9A-Za-z\u4e00-\u9fa5]"
 for i in items:
     if type(i[1]) == str:
         temps = i[1]
-        temps = re.sub(reg, '', temps)
         item.append(temps)
     else:
         item.append(i[1])
 eadf = pd.DataFrame({'entity':keys,'attribute':item})
-eadf.to_csv("./IPLoM_result/entityandattribute.csv",index=False)
+#eadf.to_csv("./IPLoM_result/entityandattribute.csv",index=False)
+eadf.to_csv("./IPLoM_result/HDFSentityandattribute.csv",index=False)
 #生成entityjson
 class sentc():
     def __init__(self,content,entities):
@@ -137,5 +147,6 @@ for log in LogKey:
         entitylist.append(entityc(entity,start,end,entitypara[entity]).__dict__)
     sentlist["sent"+str(tempint)] = sentc(log,entitylist).__dict__
     tempint =tempint + 1
-with open('IPLoM_result/entitydata.json', 'w') as fw:
+#with open('IPLoM_result/entitydata.json', 'w') as fw:
+with open('IPLoM_result/HDFSentitydata.json', 'w') as fw:
     json.dump(sentlist,fp=fw)
