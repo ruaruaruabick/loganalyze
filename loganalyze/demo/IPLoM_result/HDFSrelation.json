@@ -1,0 +1,76 @@
+{
+  "sent1": {
+    "relation": "has part",
+    "entity1": "block",
+    "entity2": "file"
+  },
+  "sent2": {
+    "relation": "head of government",
+    "entity1": "block",
+    "entity2": "PacketResponder"
+  },
+  "sent3": {
+    "relation": "located on terrain feature",
+    "entity1": "block",
+    "entity2": "size"
+  },
+  "sent4": {
+    "relation": "member of",
+    "entity1": "invalidSet",
+    "entity2": "NameSystem.delete"
+  },
+  "sent5": {
+    "relation": "said to be the same as",
+    "entity1": "10.251.126.5",
+    "entity2": "delete"
+  },
+  "sent6": {
+    "relation": "no relation",
+    "entity1": "NameSystem.allocateBlock"
+  },
+  "sent7": {
+    "relation": "no relation",
+    "entity1": "Verification"
+  },
+  "sent8": {
+    "relation": "no relation",
+    "entity1": "delete"
+  },
+  "sent9": {
+    "relation": "no relation",
+    "entity1": "block"
+  },
+  "sent10": {
+    "relation": "located on terrain feature",
+    "entity1": "block",
+    "entity2": "src"
+  },
+  "sent11": {
+    "relation": "part of",
+    "entity1": "while",
+    "entity2": "exception"
+  },
+  "sent12": {
+    "relation": "no relation",
+    "entity1": "while"
+  },
+  "sent13": {
+    "relation": "located on terrain feature",
+    "entity1": "block",
+    "entity2": "size"
+  },
+  "sent14": {
+    "relation": "located on terrain feature",
+    "entity1": "block",
+    "entity2": "size"
+  },
+  "sent15": {
+    "relation": "manufacturer",
+    "entity1": "size",
+    "entity2": "blockMap"
+  },
+  "sent16": {
+    "relation": "no relation",
+    "entity1": "delete"
+  }
+}

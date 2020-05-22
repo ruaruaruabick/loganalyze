@@ -996,7 +996,9 @@
         "name": "Bean",
         "start": 0,
         "end": 3,
-        "attributes": []
+        "attributes": [
+          "orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfigurationEnhancerBySpringCGLIBecb4cb09"
+        ]
       },
       {
         "name": "name",
@@ -1213,14 +1215,6 @@
     "content": "Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1 startup date [Fri Nov 01 07 00 26 GMT 2019]; root of context hierarchy",
     "entities": [
       {
-        "name": "of",
-        "start": 144,
-        "end": 145,
-        "attributes": [
-          "orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfigurationEnhancerBySpringCGLIBecb4cb09"
-        ]
-      },
-      {
         "name": "startup",
         "start": 94,
         "end": 100,
@@ -1384,18 +1378,12 @@
         ]
       },
       {
-        "name": "of",
-        "start": 9,
-        "end": 10,
-        "attributes": [
-          "orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfigurationEnhancerBySpringCGLIBecb4cb09"
-        ]
-      },
-      {
         "name": "Bean",
         "start": 0,
         "end": 3,
-        "attributes": []
+        "attributes": [
+          "orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfigurationEnhancerBySpringCGLIBecb4cb09"
+        ]
       },
       {
         "name": "example",
@@ -1640,14 +1628,6 @@
         "end": 39,
         "attributes": [
           "orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfiguration"
-        ]
-      },
-      {
-        "name": "of",
-        "start": 33,
-        "end": 34,
-        "attributes": [
-          "orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfigurationEnhancerBySpringCGLIBecb4cb09"
         ]
       },
       {

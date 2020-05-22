@@ -24,11 +24,10 @@ org.springframework.hateoas.ResourceSupport,[]
 org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,[]
 bean,[]
 search,[]
-of,orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfigurationEnhancerBySpringCGLIBecb4cb09
 java.io.Serializable,[]
 JMX,refreshEndpoint
 Mapping,servletdispatcherServlet
-Bean,[]
+Bean,orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfigurationEnhancerBySpringCGLIBecb4cb09
 path,[]
 org.springframework.web.HttpRequestMethodNotSupportedException,[]
 org.springframework.http.HttpEntity,[]

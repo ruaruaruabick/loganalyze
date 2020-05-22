@@ -23,8 +23,8 @@ def sort_by_value(d):
     return newdict
 
 #提取实体
-#result = os.popen("polyglot  --lang en  ner --input ../logs/cart1.log").readlines()
-result = os.popen("polyglot  --lang en  ner --input ../logs/HDFS_2k.log").readlines()
+result = os.popen("polyglot  --lang en  ner --input ../logs/cart1.log").readlines()
+#result = os.popen("polyglot  --lang en  ner --input ../logs/HDFS_2k.log").readlines()
 newresult = []
 numers = {}
 for line in result:
@@ -46,8 +46,8 @@ ExistEntityDict：LogKey中存在的实体按出现次数排序
 """
 #查看提取出的实体是否在Logkey中
 punc = string.punctuation
-#LogKeyFile = pd.read_csv('IPLoM_result/cart1.log_templates.csv')
-LogKeyFile = pd.read_csv('IPLoM_result/HDFS_2k.log_templates.csv')
+LogKeyFile = pd.read_csv('IPLoM_result/cart1.log_templates.csv')
+#LogKeyFile = pd.read_csv('IPLoM_result/HDFS_2k.log_templates.csv')
 LogKey = LogKeyFile['EventTemplate'].tolist()
 LogKeyStr = "".join(LogKey)
 ExistEntity = []
@@ -69,8 +69,8 @@ for log in LogKey:
             keyentitydict[log].append(key)
 
 #读取日志，提取参数
-#logcsv = pd.read_csv('IPLoM_result/cart1.log_structured.csv')
-logcsv = pd.read_csv('IPLoM_result/HDFS_2k.log_structured.csv')
+logcsv = pd.read_csv('IPLoM_result/cart1.log_structured.csv')
+#logcsv = pd.read_csv('IPLoM_result/HDFS_2k.log_structured.csv')
 ep = pd.DataFrame(logcsv,columns=['EventTemplate','ParameterList'])
 entityparaposs = {}
 entitypara = {}
@@ -87,8 +87,8 @@ for index, row in ep.iterrows():
             entityparaposs[entity] = entityparaposs[entity] + 1
 entityparaposs = sort_by_value(entityparaposs)
 #将参数与实体对应起来
-#tempf = open('IPLoM_result/attlist','w')
-tempf = open('IPLoM_result/HDFSattlist','w')
+tempf = open('IPLoM_result/attlist','w')
+#tempf = open('IPLoM_result/HDFSattlist','w')
 
 for index, row in ep.iterrows():
     seque = []
@@ -119,8 +119,8 @@ for i in items:
     else:
         item.append(i[1])
 eadf = pd.DataFrame({'entity':keys,'attribute':item})
-#eadf.to_csv("./IPLoM_result/entityandattribute.csv",index=False)
-eadf.to_csv("./IPLoM_result/HDFSentityandattribute.csv",index=False)
+eadf.to_csv("./IPLoM_result/entityandattribute.csv",index=False)
+#eadf.to_csv("./IPLoM_result/HDFSentityandattribute.csv",index=False)
 #生成entityjson
 class sentc():
     def __init__(self,content,entities):
@@ -147,6 +147,6 @@ for log in LogKey:
         entitylist.append(entityc(entity,start,end,entitypara[entity]).__dict__)
     sentlist["sent"+str(tempint)] = sentc(log,entitylist).__dict__
     tempint =tempint + 1
-#with open('IPLoM_result/entitydata.json', 'w') as fw:
-with open('IPLoM_result/HDFSentitydata.json', 'w') as fw:
+with open('IPLoM_result/entitydata.json', 'w') as fw:
+#with open('IPLoM_result/HDFSentitydata.json', 'w') as fw:
     json.dump(sentlist,fp=fw)
