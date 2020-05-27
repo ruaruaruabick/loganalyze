@@ -1,8 +1,7 @@
 EventId,EventTemplate,Occurrences
-a703331f,Initializing Spring embedded WebApplicationContext,1
-cef0319e,Tomcat <*> <*> port(s) 80 (http),2
-7a5d390e,"Mapped ""{[/carts/{customerId .*}/items/{itemId .*}] methods [GET] produces [application/json]}"" onto public works.weave.socks.cart.entities.Item works.weave.socks.cart.controllers.ItemsController.get(java.lang.String java.lang.String)",1
-242f8611,Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b40d5f0 startup date [Fri Nov 01 07 00 57 GMT 2019]; parent org.springframework.context.annotation.AnnotationConfigApplicationContext@51521cc1,1
+b54a6d4c,Refreshing,1
+f7329453,Tomcat started on port(s) 80 (http),1
+61452ac9,Mapped <*> || <*> methods [GET] produces <*> onto public <*> <*>,9
 b80245c3,"Mapped ""{[/{repository}/{id}] methods [HEAD] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}"" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation java.io.Serializable org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException",1
 a837b8b8,"Mapped <*> methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}"" onto public <*> <*> <*> <*> <*> <*> <*>",4
 c35e8545,"Mapped ""{[/{repository}/{id}] methods [PATCH] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}"" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.data.rest.webmvc.PersistentEntityResource java.io.Serializable org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler org.springframework.data.rest.webmvc.support.ETag java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException org.springframework.data.rest.webmvc.ResourceNotFoundException",1
@@ -11,14 +10,18 @@ c35e8545,"Mapped ""{[/{repository}/{id}] methods [PATCH] produces [application/h
 6f768d28,"Mapped ""{[/{repository}/{id}/{property}] methods [PATCH || PUT || POST] consumes [application/json || application/x-spring-data-compact+json || text/uri-list] produces [application/hal+json || application/json || application/*+json;charset UTF-8]}"" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.http.HttpMethod org.springframework.hateoas.Resources<java.lang.Object> java.io.Serializable java.lang.String) throws java.lang.Exception",1
 505629d0,Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type Consider declaring such methods as 'static'.,1
 c6f99426,Overriding bean definition for bean 'managementServletContext' with a different definition replacing [Root bean class [null]; scope ; abstract false; lazyInit false; autowireMode 3; dependencyCheck 0; autowireCandidate true; primary false; factoryBeanName org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName managementServletContext; initMethodName null; destroyMethodName (inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean class [null]; scope ; abstract false; lazyInit false; autowireMode 3; dependencyCheck 0; autowireCandidate true; primary false; factoryBeanName org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName managementServletContext; initMethodName null; destroyMethodName (inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]],1
+30ee2705,"Mapped ""{[/error]}"" afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4t",1
 9f149386,Starting service Tomcat,1
 46e87535,BeanFactory id 5e44614a-7369-3438-a326-d1b2bda21648,1
-213fb0f5,Detected <*> <*> in <*>,6
+e13e368f,Detected <*> in <*>,3
+a703331f,Initializing Spring embedded WebApplicationContext,1
+213fb0f5,Detected <*> <*> in <*>,2
 4980be9d,Mapping <*> <*> to <*>,10
+a2c35e94,Tomcat !!!!!!!!!!!!!!!!!!!!! port(s) 80 (http),1
+96520469,Mapped <*> <*> <*> afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4t,4
 1a688623,Root WebApplicationContext initialization completed in 67333 ms,1
 b30b465d,Registering beans for JMX exposure on startup,1
 7857a57f,Loading properties file from class path resource [rest-default-messages.properties],1
-f8323cb0,Mapped <*> methods <*> onto public <*> <*>,3
 8e38e60f,Started CartApplication in 197.748 seconds (JVM running for 266.136),1
 91998132,Opened connection [connectionId{localValue <*> serverValue <*> to carts-db 27017,4
 8b717f7e,Exception in monitor thread while connecting to server carts-db 27017,4
@@ -33,17 +36,24 @@ cd377249,"Mapped <*> methods <*> produces [application/hal+json || application/j
 96340c6b,Located managed bean 'configurationPropertiesRebinder' registering with JMX server as MBean [org.springframework.cloud.context.properties name configurationPropertiesRebinder context 1b40d5f0 type ConfigurationPropertiesRebinder],1
 54c37734,Bean <*> of type [class <*> is not eligible for getting processed by all BeanPostProcessors (for example not eligible for auto-proxying),4
 2ed83d76,"Mapped <*> methods <*> produces [application/hal+json || application/json || application/*+json;charset UTF-8]}"" onto public <*> <*> <*> <*> <*> <*> <*> <*>",5
-e5f15c1f,Initializing ExecutorService,1
-b168f654,Mapped <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>,4
-902a5cf8,Mapped <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>,11
+b168f654,Mapped <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>,2
 6b4e94e2,"Mapped ""{[/{repository}] methods <*> produces <*> || <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> org.springframework.web.HttpRequestMethodNotSupportedException",2
+8ed405d0,Detected afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4tfffffffffesrwawergvabfaserbeabrbeerbeebaebffbrewrqwreqrqr,1
+e5f15c1f,Initializing ExecutorService,1
 b2a256e6,Starting beans in phase 0,1
 af42fd85,Starting Servlet Engine Apache Tomcat/8.5.11,1
-6707f21d,"Mapped ""{[/error]}"" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)",1
+e9b28ba2,"Mapped ""{[/carts/{customerId .*}/items/{itemId .*}] methods [DELETE]}"" afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw215nrttrngbf34gq3qg3warfevfsdb34qrg4t",1
 4cf4833b,"Mapped ""{[/profile] methods [GET]}"" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()",1
-3bdf14ba,Mapped <*> <*> <*> <*> <*> <*> <*> <*>,6
-c2a4e265,Mapped URL path <*> onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler],6
-14e09112,Mapped <*> <*> <*> <*> <*> onto public <*> <*>,8
+c3f127d2,"Mapped ""{[/carts/{customerId}] methods [GET] produces [application/json]}"" afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhbtstbrbrtbbtsrntntrrtnrtnntrszlsufaw21534qrg4t",1
+afa398df,"Mapped ""{[/carts/{customerId .*}/items] methods <*> <*> [application/json]}"" <*>",3
+41f09225,"Mapped ""{[/browser] methods [GET]}"" onto public org.springframework.web.servlet.View org.springframework.data.rest.webmvc.halbrowser.HalBrowser.browser(javax.servlet.http.HttpServletRequest)",1
+574dfceb,"Mapped ""{[/profile] methods [OPTIONS]}"" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()",1
+ee8dfd52,"Mapped ""{[/carts/{customerId .*}/items/{itemId .*}] methods [GET] produces [application/json]}"" afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4t",1
+c31b410c,"Mapped ""{[/profile/{repository}] methods [OPTIONS] produces [application/alps+json]}"" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()",1
+bd8f4105,"Mapped ""{[/env] methods [POST]}"" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String java.lang.String>)",1
+7b599e3d,"Mapped ""{[/env/reset] methods [POST]}"" onto public java.util.Map<java.lang.String java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()",1
+132a0418,Mapped URL path afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4t onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler],6
+14e09112,Mapped <*> <*> <*> <*> <*> onto public <*> <*>,7
 12686472,"Mapped ""{[/heapdump || /heapdump.json] methods [GET] produces [application/octet-stream]}"" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean javax.servlet.http.HttpServletRequest javax.servlet.http.HttpServletResponse) throws java.io.IOException javax.servlet.ServletException",1
 087924ad,"Mapped ""{[/{repository}/{id}/{property}] methods [GET] produces [application/x-spring-data-compact+json || text/uri-list]}"" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation java.io.Serializable java.lang.String org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception",1
 d6e85356,"Mapped ""{[/{repository}/search/{search}] methods [GET] produces [application/x-spring-data-compact+json]}"" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation org.springframework.util.MultiValueMap<java.lang.String java.lang.Object> java.lang.String java.lang.String org.springframework.data.rest.webmvc.support.DefaultedPageable org.springframework.data.domain.Sort org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)",1

@@ -1,52 +1,52 @@
 
-type,configurationPropertiesRebinderAutoConfiguration Bean,orgspringframeworkcloudautoconfigureConfigurationPropertiesRebinderAutoConfigurationEnhancerBySpringCGLIBb894f39 
+type, Bean, 
 
 
 
 
 
-type,orgspringframeworkcloudsleuthinstrumentasyncAsyncDefaultAutoConfigurationDefaultAsyncConfigurerSupport Bean,orgspringframeworkcloudsleuthinstrumentasyncAsyncDefaultAutoConfigurationDefaultAsyncConfigurerSupportEnhancerBySpringCGLIB2cb0e9ff 
-type,orgspringframeworkcloudautoconfigureConfigurationPropertiesRebinderAutoConfiguration Bean,orgspringframeworkcloudautoconfigureConfigurationPropertiesRebinderAutoConfigurationEnhancerBySpringCGLIBb894f39 
-type,orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfiguration Bean,orgspringframeworkcloudsleuthinstrumentwebTraceWebAutoConfigurationEnhancerBySpringCGLIBecb4cb09 
-Tomcat,initializedwith 
+type,fffffffffffffffffffffffffffffffffffggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeeeeeeee Bean,vdkjvfdjkkbdbgkdbkgdnbjkdgjkdbjdmlkbmlfnblfdmnldjnbldfbmlgdbndklbnkgltudrlbndtubnrudlbndtulnbtulbntrldbndtunbkdltntuklndktlnbtrlkdknbjgnbfjlkgbdnjlktnbldmgdlkblshuslfehsbjksfjdkgjfsghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh 
+type,fffffffffffffffffffffffffffffffffffggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeeeeeeee Bean,vdkjvfdjkkbdbgkdbkgdnbjkdgjkdbjdmlkbmlfnblfdmnldjnbldfbmlgdbndklbnkgltudrlbndtubnrudlbndtulnbtulbntrldbndtunbkdltntuklndktlnbtrlkdknbjgnbfjlkgbdnjlktnbldmgdlkblshuslfehsbjksfjdkgjfsghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh 
+type,fffffffffffffffffffffffffffffffffffggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeeeeeeee Bean,vdkjvfdjkkbdbgkdbkgdnbjkdgjkdbjdmlkbmlfnblfdmnldjnbldfbmlgdbndklbnkgltudrlbndtubnrudlbndtulnbtulbntrldbndtunbkdltntuklndktlnbtrlkdknbjgnbfjlkgbdnjlktnbldmgdlkblshuslfehsbjksfjdkgjfsghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh 
 
 
 
 
-Mapping,filtermetricsFilter 
-Mapping,filtercharacterEncodingFilter 
-Mapping,filtertraceFilter 
-Mapping,filterhiddenHttpMethodFilter 
-Mapping,filterhttpPutFormContentFilter 
-Mapping,filterrequestContextFilter 
-Mapping,filterwebRequestLoggingFilter 
-Mapping,filterapplicationContextIdFilter 
-Mapping,servletmetricsServlet 
-Mapping,servletdispatcherServlet 
+
+Mapping,12ewqddqwvzsdefzvvsdz 
+Mapping,filtervzsdefzvvsdzcharacterEncodingFilter 
+Mapping,gragrasxcbxwdqqqqqqqqqqqqqqeqefgrhbtsbbfrdbsbddbbvxbf 
+Mapping,qrtrtrtsgfgdfsgfsgfs 
+Mapping,filtervzsdefzvvsdzhttpPutFormContentFilter 
+Mapping,filterrequesrwetFilterdfsadfsafaaerregergae 
+Mapping,filtervzsdefzvvsdzwebRequestLoggingFilter 
+Mapping,filtervzsdefzvvsdzapplicationContextIdFilter 
+Mapping,servletvsvdvxasaasaxssaxasxxxxxxxxxxxxxxxxxxxxxxxxdsvdsdsvass 
+Mapping,servletaewrerwarewewrrew 
 
 
 
-Mapped, 
-Mapped, public, 
-methods,cartscustomerId public,DELETE 
-Mapped, 
-Mapped, 
-Mapped, 
-Mapped, 
+Mapped, afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4t,cartscustomerIdmerge 
 
-Mapped, 
-Mapped, 
+Mapped, afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4t,cartscustomerId 
+Mapped,PATCH methods,consumes 
+Mapped,POST methods,consumes 
+Mapped,GET methods,produces 
 
 
-
-Mapped,webjars 
-Mapped, 
-Mapped,browser 
-Mapped,actuator 
-Mapped,actuator 
+Mapped, afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4t,health 
+Mapped, afdlhlfudzkhldkvhdszvklvhkjczvsdhlkxdhuvdzvhzlsufaw21534qrg4t,error 
 
 
-Mapped,faviconico 
+
+
+
+
+
+
+
+
+
 
 
 methods,OPTIONS public, 
@@ -77,32 +77,32 @@ methods,repositorysearchsearch public,GET
 methods,OPTIONS public,orgspringframeworkdatarestwebmvcRepositorySearchControlleroptionsForSearchorgspringframeworkdatarestwebmvcRootResourceInformation 
 methods,HEAD public,orgspringframeworkdatarestwebmvcRepositorySearchControllerheadForSearchorgspringframeworkdatarestwebmvcRootResourceInformation 
 Mapped, 
-Mapped, 
-methods,profile public,OPTIONS 
 
-Mapped, public, 
-methods,browser public,GET 
-Mapped, 
 
 
 Mapped, public, 
+
+methods, public, 
+
+
 Mapped, public, 
 Mapped, public, 
 Mapped, public, 
-Mapped, 
+Mapped, public, 
+methods,configprops public,configpropsjson 
 Mapped, public, 
 
-Mapped, 
-Mapped, 
-Mapped, 
+methods,trace public,tracejson 
+
+
 Mapped, public, 
 Mapped, 
-Mapped, 
-Mapped, 
-Mapped, 
-Mapped, 
-Mapped, 
-Mapped, 
+methods,env public,envjson 
+methods,beans public,beansjson 
+methods,info public,infojson 
+methods,autoconfig public,autoconfigjson 
+methods,mappings public,mappingsjson 
+methods,dump public,dumpjson 
 
 
 JMX,configurationPropertiesRebinder 
@@ -116,7 +116,7 @@ JMX,refreshScope name,orgspringframeworkcloudcontextscoperefresh
 
 JMX,refreshEndpoint name,orgspringframeworkcloudendpoint 
 
-Tomcat,startedon 
+
 
 serverValue,12 connection, 
 server,1417642 
